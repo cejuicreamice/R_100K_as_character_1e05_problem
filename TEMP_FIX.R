@@ -1,4 +1,15 @@
-## TEMPORARY FIX Code is here:
+## sprintf fix
+if (i >= 100000 && i < 1000000) {
+   i_chr <- sprintf("%6d", i)
+   }
+else if (i >= 1000000 && i < 10000000) {
+   i_chr <- sprintf("%7d", i)
+   }
+else {
+   i_chr <- sprintf("%d, i)
+}
+
+## TEMPORARY FIX Code, if sprintf(..) isn't work
 if (i %% 100000 == 0) {
 
 #another_digits = i %/% 100000
